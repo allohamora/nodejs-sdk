@@ -1,4 +1,9 @@
 module.exports = class FormResignDTO {
+    /**
+     * @param {string} resignIntent 
+     * @param {string} merchant 
+     * @param {string} signature 
+     */
     constructor(resignIntent, merchant, signature) {
         this.resignIntent = resignIntent
         this.signature = signature

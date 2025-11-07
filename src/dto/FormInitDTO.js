@@ -1,4 +1,9 @@
 module.exports = class FormInitDTO {
+    /**
+     * @param {string} paymentIntent 
+     * @param {string} merchant 
+     * @param {string} signature 
+     */
     constructor(paymentIntent, merchant, signature) {
         this.paymentIntent = paymentIntent
         this.signature = signature

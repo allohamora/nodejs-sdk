@@ -1,4 +1,8 @@
 module.exports = class FormUpdateDTO {
+    /**
+     * @param {string} partialIntent 
+     * @param {string} signature
+     */
     constructor(partialIntent, signature) {
         this.partialIntent = partialIntent
         this.signature = signature
