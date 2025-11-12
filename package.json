@@ -6,6 +6,10 @@
   "main": "index.js",
   "types": "./types/index.d.ts",
   "repository": "https://github.com/solidgate-tech/nodejs-sdk",
+  "files": [
+    "types",
+    "src"
+  ],
   "scripts": {
     "prebuild:dts": "rm -rf ./types",
     "build:dts": "tsc --allowJs --declaration --emitDeclarationOnly --outDir types index.js",
