@@ -1,3 +1,2 @@
-import api from './src/api';
-
 export { api as Api };
+import api = require("./src/api");

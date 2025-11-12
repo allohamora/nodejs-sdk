@@ -7,7 +7,7 @@
   "types": "index.d.ts",
   "repository": "https://github.com/solidgate-tech/nodejs-sdk",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dts": "tsc --allowJs --declaration --emitDeclarationOnly index.js"
   },
   "keywords": [
     "solidgate",
@@ -18,6 +18,7 @@
   "dependencies": {
     "crypto-js": "^4.0.0",
     "node-fetch": "^2.6.0",
-    "sprintf-js": "^1.1.2"
+    "sprintf-js": "^1.1.2",
+    "typescript": "^5.9.3"
   }
 }
