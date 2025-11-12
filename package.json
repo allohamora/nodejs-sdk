@@ -4,11 +4,11 @@
   "license": "Apache-2.0",
   "description": "Solidgate SDK",
   "main": "index.js",
-  "types": "index.d.ts",
+  "types": "./types/index.d.ts",
   "repository": "https://github.com/solidgate-tech/nodejs-sdk",
   "scripts": {
-    "prebuild:dts": "rm -f index.d.ts && rm -f src/*.d.ts",
-    "build:dts": "tsc --allowJs --declaration --emitDeclarationOnly index.js",
+    "prebuild:dts": "rm -rf ./types",
+    "build:dts": "tsc --allowJs --declaration --emitDeclarationOnly --outDir types index.js",
     "prepublishOnly": "npm run build:dts"
   },
   "keywords": [
