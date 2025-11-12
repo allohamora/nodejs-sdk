@@ -7,7 +7,8 @@
   "types": "index.d.ts",
   "repository": "https://github.com/solidgate-tech/nodejs-sdk",
   "scripts": {
-    "build:dts": "tsc --allowJs --declaration --emitDeclarationOnly index.js"
+    "build:dts": "tsc --allowJs --declaration --emitDeclarationOnly index.js",
+    "prepublishOnly": "npm run build:dts"
   },
   "keywords": [
     "solidgate",
