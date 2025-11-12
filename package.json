@@ -7,6 +7,7 @@
   "types": "index.d.ts",
   "repository": "https://github.com/solidgate-tech/nodejs-sdk",
   "scripts": {
+    "prebuild:dts": "rm -f index.d.ts && rm -f src/*.d.ts",
     "build:dts": "tsc --allowJs --declaration --emitDeclarationOnly index.js",
     "prepublishOnly": "npm run build:dts"
   },
